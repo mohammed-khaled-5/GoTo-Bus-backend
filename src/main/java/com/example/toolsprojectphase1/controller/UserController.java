@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/user")
-@CrossOrigin("*")
+@CrossOrigin(allowedHeaders = "", origins = "")
 public class UserController {
     @Autowired
     UserService userservice;
